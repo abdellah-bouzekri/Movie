@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   const footerNavs = [
     {
@@ -31,13 +33,15 @@ export default function Footer() {
       className="text-gray-500 px-4 py-5 max-w-screen-xl mx-auto md:px-8"
       id="footer">
       <div className="max-w-lg sm:mx-auto sm:text-center">
-        <img
-          src="/logo.svg"
-          width={50}
-          height={50}
-          alt="UI logo"
-          className=" mx-auto"
-        />
+        <Link to="/">
+          <img
+            src="/logo.svg"
+            width={50}
+            height={50}
+            alt="UI logo"
+            className=" mx-auto"
+          />
+        </Link>
 
         <p className="leading-relaxed mt-2 text-[15px]">
           Explore the world of cinema with us. From classic masterpieces to the
