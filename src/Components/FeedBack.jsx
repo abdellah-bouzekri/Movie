@@ -29,7 +29,7 @@ export default function FeedBack() {
 
   return (
     <>
-      <div className="flex flex-col md:flex-row mt-6">
+      <div className="flex flex-col md:flex-row ">
         <div className="hidden md:block md:w-1/2">
           <img
             src="https://images.unsplash.com/photo-1697135807547-5fa9fd22d9ec?auto=format&fit=crop&q=80&w=3387&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -37,15 +37,15 @@ export default function FeedBack() {
             alt="Feedback Image"
           />
         </div>
-        <div className="w-full md:w-1/2 p-6 ">
-          <div className="bg-white rounded-md shadow-md leading-7">
+        <div className="w-full md:w-1/2 p-6 ml-4">
+          <div className="rounded-md  leading-7 ml-4">
             <h2 className="text-lg font-semibold mb-4 ">Feedback</h2>
             <div className="mb-4 ">
-              <p className="mb-2">
+              <p className="mb-2  text-wrap">
                 How would you describe your mood after using our Website for the
                 first time?
               </p>
-              <div className="flex gap-4">
+              <div className="flex gap-4 ">
                 <button
                   onClick={() => handelfaces("😃")}
                   className="bg-gray-300 hover:bg-green-600 text-white py-2 px-4 rounded-full mr-2">
